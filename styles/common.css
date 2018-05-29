@@ -1,0 +1,54 @@
+html, body{
+    margin: 0;
+}
+
+header {
+background-color: black;
+padding : 10px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    color: whitesmoke;
+    background-color: gray;
+    text-align: center;
+    display: flex; /* or inline-flex */;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-between; 
+    align-content: center;
+}
+
+/** RESPONSIVE **/
+/* Mobile */
+@media screen and (max-width : 600px) {
+    section {
+        display: flex; /* or inline-flex */;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    section a {
+        height: 80%;
+        width: 80%;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width : 600px) and (max-width : 900px) {
+    section {
+        display: flex; /* or inline-flex */;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center; 
+    }
+    section a {
+            height: 50%;
+            width: 50%;
+    }
+    }
