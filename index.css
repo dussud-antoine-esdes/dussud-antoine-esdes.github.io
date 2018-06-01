@@ -41,6 +41,7 @@ header h1 {
     align-items: center;
     transform: translate(0px, -200px);
     animation: enter 3s ease-in-out;
+    letter-spacing: 10px;
 }
 
 h1:hover {
@@ -67,6 +68,36 @@ section a {
     width: 26%;
     margin: 40px;
     justify-content: space-between;
+}
+
+/** ABOUT */
+#about article {
+    width: 100%;
+    padding: 15px;
+    background-color: bisque;
+    color: white;
+}
+
+#about h2 {
+    text-transform: uppercase;
+    color: red;
+    text-decoration: underline
+}
+
+#about p b {
+    font-weight: 900;
+}
+
+#about hr {
+    width: 80%;
+}
+
+/** MAIN PAGE */
+#about article {
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(64, 108, 228);
+    color: white;
 }
 
 article {
@@ -116,6 +147,11 @@ h2:hover{
 }
 #article-6 {
     background-image : url("img/article-6.jpg"); 
+}
+
+footer{
+    height:325px;
+    background-color: black
 }
 
 /** RESPONSIVE **/
