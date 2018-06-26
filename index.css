@@ -13,7 +13,7 @@ html, body {
 
 header {
     background-image  : url("img/background.jpg");
-    background-repeat: no repeat;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100%;
@@ -108,13 +108,13 @@ section a {
 }
 
 #Photo {
-    width: 220px;
-    height: auto;
+    width: auto;
+    height: 180px;
     display: flex; /* or inline-flex */;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: space-around; 
+    align-items: center; 
     align-content: center;  
 }
 
@@ -163,7 +163,7 @@ article {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: space-between; 
+    align-items: center; 
     align-content: center;
     background-color: rgba(0, 0, 0, 0.5);
     background-repeat: no-repeat;
@@ -240,7 +240,6 @@ footer div {
         width: 80%;
     }
 }
-
 
 /* Tablet */
 @media only screen and (min-width : 600px) and (max-width : 900px) {
