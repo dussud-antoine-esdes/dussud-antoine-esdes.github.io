@@ -13,19 +13,15 @@ html, body {
 
 header {
     background-image  : url("img/background.jpg");
+    background-repeat: no repeat;
+    background-position: center;
+    background-size: cover;
     height: 100%;
     width: 100%;
-    margin: 0%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    display: flex; /* or inline-flex */;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display:flex;
+    flex-direction:column;
+    justify-content: center ;
     align-items: center;
-    padding: 0px 10px;
 }
 
 header h1 {
@@ -42,6 +38,11 @@ header h1 {
     transform: translate(0px, -200px);
     animation: enter 3s ease-in-out;
     letter-spacing: 10px;
+    
+}
+
+header a {
+    text-decoration:none;
 }
 
 h1:hover {
@@ -52,6 +53,42 @@ h1:hover {
     transition: all 0.2s cubic-bezier(.03,.83,.53,.98);
     margin:auto;
 }
+
+nav{
+    background-color:rgb(2, 45, 96);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+    top : 0;
+    width : 100%;
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item{
+    height: 50px;
+    min-width: 100px;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(37, 65, 117);
+    background-color: rgb(2, 45, 96);
+    }
+    
+    .nav-item:hover{
+    background-color: rgb(40, 103, 180);
+    color:rgb(255, 255, 255);
+    }
+    
+    .nav-item a, .nav-item a:visited{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    }
 
 section {
     height: 100%;
@@ -70,17 +107,29 @@ section a {
     justify-content: space-between;
 }
 
+#Photo {
+    width: 220px;
+    height: auto;
+    display: flex; /* or inline-flex */;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-around; 
+    align-content: center;  
+}
+
 /** ABOUT */
 #about article {
     width: 100%;
     padding: 15px;
-    background-color: bisque;
+    background-color: rgb(255, 220, 196);
     color: white;
+    text-align: justify;
 }
 
 #about h2 {
     text-transform: uppercase;
-    color: red;
+    color: black;
     text-decoration: underline
 }
 
@@ -95,10 +144,17 @@ section a {
 /** MAIN PAGE */
 #about article {
     width: 100%;
-    padding: 15px;
-    background-color: rgb(64, 108, 228);
+    height: 100%;
+    background-color:rgb(40, 103, 180);
     color: white;
 }
+
+#about h2 {
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255); 
+        margin: auto;
+        text-decoration: none;
+}    
 
 article {
     width: 100%;
@@ -115,14 +171,13 @@ article {
     background-size: cover;
     text-align: center;
     color: rgb(255, 255, 255);
-    border: 2px solid rgb(255, 255, 255); 
-
+    border: 1px solid rgb(255, 255, 255); 
 }
 h2{
-    color: rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
 }
 p{
-    color: rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
 }
 h2:hover{
     background-color: rgba(0, 0, 0, 0.5);
@@ -130,6 +185,7 @@ h2:hover{
     border: 2px solid rgb(255, 255, 255); 
     margin: auto;
 }
+
 #article-1 {
     background-image : url("img/article-1.jpg"); 
 }
@@ -149,9 +205,25 @@ h2:hover{
     background-image : url("img/article-6.jpg"); 
 }
 
-footer{
-    height:325px;
-    background-color: black
+footer {
+    height: auto;
+    background-color: #86898C;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+footer div {
+    background-color: #86898C;
+    height: auto;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: justify;
+    font-size: x-small;
 }
 
 /** RESPONSIVE **/
@@ -182,7 +254,6 @@ footer{
             height: 50%;
             width: 50%;
     }
-   
     }
 
 /** ANIMATIONS **/
