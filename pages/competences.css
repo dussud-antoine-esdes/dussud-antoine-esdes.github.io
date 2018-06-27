@@ -1,13 +1,13 @@
 @font-face
 {
 	font-family: "Roboto";
-	src: url(fonts/roboto/Roboto-Light.ttf);
+	src: url(../fonts/roboto/Roboto-Light.ttf);
 }
 
 @font-face
 {
 	font-family: "neou";
-	src: url(fonts/neou/Neou-Bold.ttf);
+	src: url(../fonts/neou/Neou-Bold.ttf);
 }
 
 html, body {
@@ -18,7 +18,7 @@ html, body {
 }
 header {
     background-image: url("../img/background2.jpg");
-    background-repeat: no repeat;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100%;
@@ -29,7 +29,8 @@ header {
     align-items: center;
 
 }
-header h1 {    
+header h1 {
+    font-family: 'neou';
     margin: auto;
     color: rgb(255, 255, 255);
     border-radius: 3px;
@@ -40,10 +41,9 @@ header h1 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    transform: translate(0px, -130px);
+    transform: translate(0px, -200px);
     animation: enter 3s ease-in-out;
     letter-spacing: 10px;
-    cursor: pointer
 }
 
 header h1:hover{
@@ -51,6 +51,7 @@ header h1:hover{
 }
 
 header h2 {
+    font-family: neou;
     color: rgb(255, 255, 255);
     text-align: center;
     margin: 0;
@@ -64,6 +65,7 @@ header h2:hover{
 }
 
 nav{
+    font-family: Roboto;
     background-color:rgb(2, 45, 96);
     display: flex;
     justify-content: space-between;
@@ -99,15 +101,14 @@ nav{
     }
 
 h3{
+    font-family: Roboto;
     font-size: 65px;
     text-align: center;
-    border-style: solid;
-    color:rgb(2, 45, 96);
-    background-color: rgb(255, 255, 255);
-    
+    color:rgb(255, 255, 255);
 }
 
 h4{
+    font-family: Roboto;
     padding: 10px;
     margin: 280px;
     margin-top:20px;
@@ -129,6 +130,7 @@ h4:hover{
 }
 
 .list{
+    font-family: Roboto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,6 +140,11 @@ h4:hover{
     flex-wrap: nowrap;
     justify-content: space-between;
     align-content: center;
+}
+
+h5{
+    font-size: 15px;
+    font-family: Roboto;
 }
 
 footer {
