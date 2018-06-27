@@ -101,14 +101,15 @@ nav{
     }
 
 h3{
+    font-family: Roboto;
     font-size: 65px;
     text-align: center;
-    border-style: solid;
-    color:rgb(2, 45, 96);
-    background-color: rgb(255, 255, 255);
-}
+    color:rgb(255, 255, 255);
+    }
+
 
 h4{
+    font-family: Roboto;
     padding: 10px;
     margin: 280px;
     margin-top:20px;
@@ -134,10 +135,7 @@ a:link {
 }
 
 p{
-    font-family: 'neou';
-    border-style: solid;
-    border-width: 2px;
-    border-color: white;
+    font-family: Roboto;
     margin : 5px 100px 5px;;
     color: white;
     display: flex; /* or inline-flex */;
@@ -147,6 +145,7 @@ p{
     align-content: center;
     transform: translate(0px,-10px);
     text-decoration: none;
+    text-decoration: underline;
 }
 
 .list{
