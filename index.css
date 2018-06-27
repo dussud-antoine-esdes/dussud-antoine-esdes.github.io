@@ -1,8 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-
-*{
-font-family: 'Poppins', sans-serif;
+@font-face
+{
+	font-family: "Roboto";
+	src: url(fonts/roboto/Roboto-Light.ttf);
 }
+
+@font-face
+{
+	font-family: "neou";
+	src: url(fonts/neou/Neou-Bold.ttf);
+}
+
+
 
 html, body {
     height: 100%;
@@ -38,7 +46,7 @@ header h1 {
     transform: translate(0px, -200px);
     animation: enter 3s ease-in-out;
     letter-spacing: 10px;
-    
+    font-family: 'neou';
 }
 
 header a {
@@ -70,18 +78,17 @@ nav{
 
 .nav-item{
     height: 50px;
-    min-width: 100px;
+    min-width: auto;
     flex: 1;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: rgb(37, 65, 117);
-    background-color: rgb(2, 45, 96);
+    background-color: rgb(40, 103, 180);
     }
     
-    .nav-item:hover{
-    background-color: rgb(40, 103, 180);
+.nav-item:hover{
+    background-color: rgb(2, 45, 96);
     color:rgb(255, 255, 255);
     }
     
@@ -120,8 +127,6 @@ section a {
 
 /** ABOUT */
 #about article {
-    width: 100%;
-    padding: 15px;
     background-color: rgb(255, 220, 196);
     color: white;
     text-align: justify;
@@ -215,7 +220,7 @@ footer {
 	text-align: center;
 }
 
-footer div {
+.CV {
     background-color: #86898C;
     height: auto;
 	color: white;
@@ -224,6 +229,11 @@ footer div {
 	justify-content: space-around;
 	text-align: justify;
     font-size: x-small;
+}
+
+/* visited link */
+a:link {
+    text-decoration: none;
 }
 
 /** RESPONSIVE **/

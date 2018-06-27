@@ -17,8 +17,8 @@ html, body {
     margin: 0;
 }
 header {
-    background-image: url("../img/background3.jpg");
-    background-repeat: no repeat;
+    background-image: url("../img/background4.jpg");
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100%;
@@ -88,7 +88,7 @@ nav{
     background-color: rgb(40, 103, 180);
     }
     
-.nav-item:hover{
+    .nav-item:hover{
     background-color: rgb(2, 45, 96);
     color:rgb(255, 255, 255);
     }
@@ -135,7 +135,7 @@ p{
     border-style: solid;
     border-width: 2px;
     border-color: white;
-    margin : 5px 100px 5px;
+    margin : 5px 100px 5px;;
     color: white;
     display: flex; /* or inline-flex */;
     flex-direction: row;
@@ -175,17 +175,17 @@ footer {
 	text-align: center;
 }
 
-#esdes-img{
+#lusso-img{
     width: 250px;
     transform: translate(0px, 10px);
 }
 
-#hwr-img{
+#monoprix-img{
     width: 250px;
     transform: translate(0px, 10px);
 }
 
-#stex-img{
+#foncia-img{
     width: 250px;
     transform: translate(0px, 10px);
 }
