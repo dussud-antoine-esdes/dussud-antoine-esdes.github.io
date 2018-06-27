@@ -97,6 +97,7 @@ nav{
     }
 
 section {
+    background-color: rgb(40, 103, 180);
     height: 100%;
     width: 100%;
     display: flex; /* or inline-flex */;
@@ -126,7 +127,6 @@ section a {
 
 /** ABOUT */
 #about article {
-    background-color: rgb(255, 220, 196);
     color: white;
     text-align: justify;
 }
@@ -139,7 +139,7 @@ section a {
 
 #about p b {
     font-weight: 900;
-    color : rgb(2, 45, 96);
+    color : rgb(211, 89, 18);
 }
 
 #about hr {
@@ -150,7 +150,7 @@ section a {
 #about article {
     width: 100%;
     height: 100%;
-    background-color:rgb(40, 103, 180);
+    background-color:rgb(2, 45, 96);
     color: white;
 }
 
@@ -179,6 +179,7 @@ article {
     color: rgb(255, 255, 255);
     border: 1px solid rgb(255, 255, 255); 
 }
+
 h2{
     color: rgb(255, 255, 255);
 }
